@@ -1,0 +1,258 @@
+
+@import "./_null";
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0 10% ;
+    
+}
+
+// header
+header{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px;
+    
+}
+.logo-img{
+    width: 10%;
+    
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    li{
+    display: inline;
+    padding: 0 1%;
+
+}    
+}
+.catalog {
+    padding: 3%;
+    display: flex;
+}
+.search{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+.poisk_str{
+    display: flex   ;
+    border: 2px solid rgb(245, 202, 11);
+    align-items: center;
+    border-radius: 2px;
+    padding: 1%;
+    input{
+        
+        width: 40vw;
+        height: 2vh;
+        ::placeholder{
+
+        }
+    }
+}
+#plus{
+    background: linear-gradient(to right, rgb(151, 165, 243),rgb(26, 53, 206), rgb(223, 81, 104), rgb(226, 94, 17));
+    padding: 0 8%;
+    border-radius: 10px;
+    color: white;
+}
+//под хедаром
+.under-header {
+    display: flex;
+    height: 4vh;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px rgb(240, 240, 240);
+    position: relative;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+        display: inline;
+        padding: 0 4%;   
+        text-wrap: nowrap;
+        }
+    }
+}
+.under-under-header{
+    
+    font-size: 14px;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        
+        li{
+            display: inline;
+            padding: 0 1%;   
+            text-wrap: nowrap;
+            line-height: 2.5;
+        }
+    }
+}
+.bread-crumbs{
+    width: 99%;
+}
+
+.wrapper{
+    margin-top: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery {
+    display: flex;
+    align-items: flex-start;
+}
+
+.miniphotos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-right: 50px; 
+}
+
+.miniphoto {
+    width: 80px; 
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.miniphoto.active {
+    border: 2px solid rgb(245, 202, 11);
+    align-items: center;
+    border-radius: 2px;
+}
+
+.main-photo img {
+    width: 200px; 
+}
+
+
+.text{
+    padding: 0 10%;
+    h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    h2{
+        margin: 5% 0;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 14px;
+        margin: 3% 0;
+        line-clamp: 3;
+        //Показывать 4 строки из всего текста
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        
+
+    }
+}
+#no_ocenok{
+    padding: 4% 0;
+}
+.k_o_t{
+    margin: 0% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.blue_text{
+    cursor: pointer; 
+    color: rgb(38, 72, 226);
+    
+    
+}
+
+
+#add_v_basket{
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3% ;
+    font-size: calc(1vw + 1px);
+    
+}
+#card{
+    padding-left: 5%;
+}
+.price {
+    align-items: end;
+    display: flex;
+    h1{
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(255, 100, 80);
+    }
+    h6{
+        font-weight: 600;
+        font-size: 12px;
+        color: rgb(255, 100, 80);
+    }
+    h4{
+        color:gray;
+        text-decoration: line-through;
+        font-size: 14px;
+    }
+    h5{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 1%;
+    }
+}
+.deliv{
+    padding: 1vh 0;
+    p{
+        padding: 1vh 0;
+    }
+}
+#woodgun{
+    display: inline;
+}
+
+.rassrok {
+    display: flex;
+}
+.ras {
+    padding: 10%;
+    
+    
+    text-wrap: nowrap;
+    h1{
+        font-size: calc(1vw + 5px);
+        
+        
+    }
+    p{
+        color: grey;
+        padding-top: 3%;
+    }
+}
+#oformit{
+    font-weight: 600;
+    
+    padding: 0% 10% ;
+    font-size: calc(1vw + 1px);
+}
+.alfa{
+    padding: 10% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding-left: 5%;  
+    img{
+        width: 15%;
+        object-fit: contain;
+    }
+    h1{
+        font-size: calc(2vw + 10px);
+        color: grey;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+}
